@@ -95,14 +95,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <form action="/add-article.php" method="post">
             <div class="form-control">
               <label for="title">Titre</label>
-              <input type="text" name="title" id="title">
+              <input type="text" name="title" id="title" value=<?= $title ?? '' ?>>
               <!-- <p class="text-error"></p> -->
+              <?php if ($errors['title']) : ?>
+                                <p class="text-danger"><?= $errors['title'] ?></p>
+                            <?php endif; ?>
             </div>
+
             <div class="form-control">
               <label for="image">Image</label>
-              <input type="text" name="image" id="image">
+              <input type="text" name="image" id="image" value=<?= $image ?? '' ?>>
               <!-- <p class="text-error"></p> -->
+              <?php if ($errors['image']) : ?>
+                                <p class="text-danger"><?= $errors['image'] ?></p>
+                            <?php endif; ?>
+
             </div>
+
             <div class="form-control">
               <label for="category">Catégorie</label>
               <select name="category" id="category">
@@ -111,11 +120,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <option value="politics">Politique</option>
               </select>
               <!-- <p class="text-error"></p> -->
+              <?php if ($errors['category']) : ?>
+                                <p class="text-danger"><?= $errors['category'] ?></p>
+                              <?php endif; ?>
             </div>
             <div class="form-control">
               <label for="content">Contenu</label>
               <textarea name="content" id="content"></textarea>
               <!-- <p class="text-error"></p> -->
+              <?php if ($errors['content']) : ?>
+                                <p class="text-danger"><?= $errors['content'] ?></p>
+                            <?php endif; ?>
             </div>
             <div class="form-actions">
               <button class="btn btn-secondary" type="button">Annuler</button>

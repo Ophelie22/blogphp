@@ -1,1 +1,35 @@
-[{"title":"Symfony","image":"https:\/\/symfony.com\/images\/opengraph\/symfony.png","category":"technology","content":"Je vois Symfony comme deux grandes parties. La premi&egrave;re moiti&eacute; est la route, le contr&ocirc;leur, le syst&egrave;me de r&eacute;ponse. C'est tr&egrave;s simple et bien... vous &ecirc;tes d&eacute;j&agrave; un expert en la mati&egrave;re ! La seconde moiti&eacute; de Symfony est consacr&eacute;e aux nombreux objets utiles qui flottent... qui n'attendent que nous pour les utiliser !\r\n\r\n","id":1691584277}]
+[
+  {
+    "title":"Symfony",
+    "image":"https:\/\/symfony.com\/images\/opengraph\/symfony.png",
+    "category":"technology",
+    "content":"Je vois Symfony comme deux grandes parties. La premi&egrave;re moiti&eacute; est la route, le contr&ocirc;leur, le syst&egrave;me de r&eacute;ponse. C'est tr&egrave;s simple et bien... vous &ecirc;tes d&eacute;j&agrave; un expert en la mati&egrave;re ! La seconde moiti&eacute; de Symfony est consacr&eacute;e aux nombreux objets utiles qui flottent... qui n'attendent que nous pour les utiliser !\r\n\r\n",
+    "id":1691584277
+  },
+  {
+    "title":"Utilisation de Taillwind avec Symfony",
+    "image":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSYXnMm6Q6ntss4UjZCeK62pIUUCKTRtC69aA&usqp=CAU",
+    "category":"technology",
+    "content":"Dans cet article, je vais vous pr&eacute;senter Tailwind Elements, une surcouche de Tailwind CSS qui permet aux habitu&eacute;s de Bootstrap de se sentir comme chez eux !\r\n\r\nEn effet, Tailwind Elements est un ensemble de composants et de blocs pr&ecirc;ts &agrave; l&rsquo;emploi, qui vous permettront de cr&eacute;er rapidement des interfaces web, tout en b&eacute;n&eacute;ficiant de la puissance de Tailwind CSS !\r\n\r\nNous en profiteroins pour voir comment l&rsquo;installer dans un projet Symfony 6 avec Webpack Encore.\r\n\r\n",
+    "id":1691586009
+  },
+  {
+    "title":"Utilisation de Taillwind avec Symfony",
+    "image":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSYXnMm6Q6ntss4UjZCeK62pIUUCKTRtC69aA&usqp=CAU",
+    "category":"technology",
+    "content":"Dans cet article, je vais vous pr&eacute;senter Tailwind Elements, une surcouche de Tailwind CSS qui permet aux habitu&eacute;s de Bootstrap de se sentir comme chez eux !\r\n\r\nEn effet, Tailwind Elements est un ensemble de composants et de blocs pr&ecirc;ts &agrave; l&rsquo;emploi, qui vous permettront de cr&eacute;er rapidement des interfaces web, tout en b&eacute;n&eacute;ficiant de la puissance de Tailwind CSS !\r\n\r\nNous en profiteroins pour voir comment l&rsquo;installer dans un projet Symfony 6 avec Webpack Encore.\r\n\r\n",
+    "id":1691586291
+  },
+  {
+    "title":"Article",
+    "image":"https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSA6hsBbJLVUV7vkIrgCUPpJ7EN4rHfdG9kLXhmOdNq_bV5NP5o1jM4JwJFHvuuQGOt5HM&usqp=CAU",
+    "category":"technology",
+    "content":"J'entre dans un &eacute;tat de flux. Je suis tr&egrave;s concentr&eacute;e et mon esprit se concentre uniquement sur le design de diff&eacute;rents points de connexion, sur passer d'un &eacute;cran &agrave; l'autre et toutes les diff&eacute;rentes mani&egrave;res que l'application pourrait bouger. j'aime vraiment pouvoir penser :",
+    "id":1691586987
+  },
+  {
+    "title":"l&#039;arbre",
+    "image":"https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Frappasoft.com%2Fstorage%2F203%2FBUhURPqJbmAtU6lZqG0k59QmhNe0A9-metabWF4cmVzZGVmYXVsdC5qcGc%3D-.jpg&tbnid=dW_SuR9BxEF91M&vet=10CH8QMyijAWoXChMIyOyQpNDPgAMVAAAAAB0AAAAAEAM..i&imgrefurl=https%3A%2F%2Frappasoft.com%2Fblog%2Fcategory%2Ftailwind&docid=Vl4iHv-SzaxHfM&w=1280&h=720&q=tailwind%20imzage%20url&ved=0CH8QMyijAWoXChMIyOyQpNDPgAMVAAAAAB0AAAAAEAM",
+    "category":"technology",
+    "content":"enons de le voir, avec Symgony UX Autocomplete, la mise en place d&rsquo;un autocomplete pour nos formulaires et d&rsquo;une simplicit&eacute; d&eacute;concertante !\r\n\r\n",
+    "id":1691587157}]
