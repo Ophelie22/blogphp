@@ -139,11 +139,31 @@ footer {
 }
 
 /* content  */
-
 .content {
+  max-width: 100rem;
+  width: 100%;
   flex: 1;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
+  flex-flow: column;
+  align-self: center;
   align-items: center;
+  padding: 2rem 0;
+}
+  /* block */
+
+.block {
+  border-radius: 3px;
+  border: var(--border);
+  background-color: white;
+  box-shadow: var(--box-shadow);
+}
+
+/* utils */
+
+.p-20 {
+    padding:20px;
+}
+
+.p-10 {
+    padding:10px;
 }
