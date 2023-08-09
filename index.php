@@ -1,19 +1,11 @@
 <?php
-//afficher la liste de nos articles
 $filename = __DIR__ . '/data/articles.json';
 $articles = [];
-$categories =[];
+$categories = [];
 
 if (file_exists($filename)) {
   $articles = json_decode(file_get_contents($filename), true) ?? [];
-  //permet de retourner un tableau contenant uniquement les catégories.
   $cattmp = array_map(fn ($a) => $a['category'],  $articles);
-
-
-  //RAPPEL note pour moi afin de me rappeler 
-  //On parcour le tableau des categories vide []
-  //pour cahque element $cat du tableau des cate gories  on verifie une $acc existe
-  // on obteient un tableau associatif ['category' => nombre]
   $categories = array_reduce($cattmp, function ($acc, $cat) {
     if (isset($acc[$cat])) {
       $acc[$cat]++;
@@ -22,7 +14,6 @@ if (file_exists($filename)) {
     }
     return $acc;
   }, []);
-
   $articlePerCategories = array_reduce($articles, function ($acc, $article) {
     if (isset($acc[$article['category']])) {
       $acc[$article['category']] = [...$acc[$article['category']], $article];
@@ -32,8 +23,8 @@ if (file_exists($filename)) {
     return $acc;
   }, []);
 }
-//echo count($articles);
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
