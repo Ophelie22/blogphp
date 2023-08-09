@@ -3,6 +3,9 @@ $filename = __DIR__ . '/data/articles.json';
 $articles = [];
 $categories = [];
 
+$_GET = filter_input_array(INPUT_GET, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$selectedCat = $_GET['cat'] ?? '';
+
 if (file_exists($filename)) {
   $articles = json_decode(file_get_contents($filename), true) ?? [];
   $cattmp = array_map(fn ($a) => $a['category'],  $articles);
@@ -37,8 +40,10 @@ if (file_exists($filename)) {
         <div class="container">
             <?php require_once 'includes/header.php' ?>
             <div class="content">
+              <div class="newsfeed-container">
                   <div class="category-container">
-                    <?php foreach ($categories as $cat => $num) : ?>
+
+                      <?php foreach ($categories as $cat => $num) : ?>
                         <h2><?= $cat ?></h2>
                         <div class="articles-container">
                             <?php foreach ($articlePerCategories[$cat] as $a) : ?>
