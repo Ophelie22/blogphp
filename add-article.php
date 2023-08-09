@@ -15,6 +15,8 @@ $errors = [
   'category' => '',
   'content' => '',
 ];
+$articles =[];
+
 if (file_exists($filename)) {
   $articles = json_decode(file_get_contents($filename), true) ?? [];
 }
@@ -57,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors['image'] = ERROR_IMAGE_URL;
   }
 
-
 //utilisation de array filter pour vérifier que la chaine de caracteres n'est pas vide
 // RAPPEL perso on peut !count en debut de tableau au lieu du empty 
 //RAPPEL  array_filter($errors, fn ($e) => $e !== '') retourne un nouveau tableau associatif qui contient uniquement les éléments dont 
@@ -74,7 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Location: /');
   }
 }
-
 
 ?>
 <!DOCTYPE html>
