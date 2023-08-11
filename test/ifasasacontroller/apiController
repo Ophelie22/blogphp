@@ -22,5 +22,10 @@ class ApiController extends AbstractController
         $responseData = json_decode($response->getContent(), true);
 
         return $this->json($responseData);
+        $form = $formBuilder->createMyForm($responseData); // Créez votre formulaire en utilisant les données reçues
+
+        return $this->render('form_template.html.twig', [
+            'form' => $form->createView(),
+        ]);
     }
 }
